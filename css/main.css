@@ -142,7 +142,6 @@ figure {
 header {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
   background: url(../img/white-desk-2.jpg) center no-repeat #333;;
   background-size: cover;
   min-height: 440px;
@@ -154,14 +153,9 @@ nav {
 
 nav ul {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-around;
   margin: 0;
   padding: 0;
-}
-
-nav ul li{
-  display: flex;
 }
 
 nav ul li a {
@@ -176,8 +170,6 @@ a:hover {
 }
 
 header h1 {
-  display: flex;
-  flex-flow: row wrap;
   width: 100%;
   font-family: 'Warnes', cursive;
   font-size: 4.5em;
@@ -205,29 +197,12 @@ header h2 {
 .portfolio .content-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0;
-}
-
-/*.portfolio article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}*/
-
-.portfolio .portfolio-items {
-  display: flex;
-  justify-content: center;
   flex-flow: row wrap;
 }
 
 .portfolio figure {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   margin: 20px 0;
 }
 
@@ -257,14 +232,11 @@ header h2 {
   padding: 40px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 
 }
 .about .content-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -292,7 +264,6 @@ footer {
 footer figure {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 footer img#headshot {
@@ -305,25 +276,28 @@ footer h4 {
   margin: 40px 0 10px 0;
 }
 
-footer .contact-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 footer .email, footer .whatsapp {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+footer .photo, 
+footer .email-contact,
+footer .whatsapp-contact,
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+
 footer .email {
   width: 70%;
 }
 
 footer .whatsapp {
-  width: 50%;
+  width: 45%;
 }
 
 footer .email p, footer .whatsapp p {
@@ -333,6 +307,7 @@ footer .email p, footer .whatsapp p {
 footer .email a, footer .whatsapp a {
   text-decoration: none;
   color: #066F78;
+  font-size: 0.875em;
 }
 
 footer .email i, footer .whatsapp i {
@@ -473,7 +448,7 @@ footer .social-icons i {
 
   h3 {
     font-size: 1.5em;
-    margin-bottom: 40px;
+    margin: 50px 0;
   }
 
   p {
@@ -502,12 +477,16 @@ footer .social-icons i {
   /* Portfolio Section */
   
   .portfolio {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   .portfolio figure, 
   .portfolio .portfolio-text {
     width: 48%;
+  }
+
+  .portfolio figure {
+    margin: 20px 0 40px 0;
   }
 
   .portfolio .portfolio-text {
@@ -521,7 +500,7 @@ footer .social-icons i {
   /* About Section */
 
   .about {
-    padding-bottom: 60px;
+    padding-bottom: 90px;
   }
 
   .about h3 {
@@ -539,15 +518,15 @@ footer .social-icons i {
   }
 
   footer .email a, footer .whatsapp a {
-    font-size: 1.25em;
+    font-size: 1em;
   }
 
   footer .email {
-    width: 55%;
+    width: 40%;
   }
 
   footer .whatsapp {
-    width: 40%;
+    width: 30%;
   }
 
   footer .social-icons {
@@ -624,6 +603,67 @@ footer .social-icons i {
 
   .about p {
     line-height: 1.6;
+  }
+
+  /* Footer */
+
+  footer .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  footer img#headshot {
+    width: 55%;
+  }
+
+  footer .photo {
+    order: 2;
+    margin-bottom: 30px;
+  }
+
+  footer .email-contact {
+    order: 1;
+  }
+
+  footer .whatsapp-contact {
+    order: 3;
+  }
+
+  footer .social {
+    order: 4;
+  }
+
+  footer .photo,
+  footer .email-contact,
+  footer .whatsapp-contact,
+  footer .social {
+    flex-basis: 33%;
+  }
+ 
+  footer .whatsapp {
+    width: 75%;
+  }
+
+  footer .email {
+    width: 100%;
+  }
+
+  footer .social-icons {
+    width: 60%;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+  }
+
+  footer .email a, footer .whatsapp a {
+    font-size: 1.25em;
+  }
+
+  .copyright {
+    font-size: 1em;
   }
 }
 
