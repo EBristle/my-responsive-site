@@ -143,9 +143,11 @@ header {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url(../img/white-desk.jpg) center no-repeat #333;;
+  background: url(../img/white-desk-2.jpg) center no-repeat #333;;
   background-size: cover;
+  min-height: 440px;
 }
+
 nav {
   padding: 20px 0 10px 0;
 }
@@ -153,8 +155,7 @@ nav {
 nav ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
@@ -208,17 +209,16 @@ header h2 {
   margin: 0;
 }
 
-.portfolio article {
+/*.portfolio article {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
+}*/
 
 .portfolio .portfolio-items {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -232,7 +232,6 @@ header h2 {
 }
 
 .portfolio img {
-  /*margin: 40px 50px 25px 50px;*/
   border: 2px solid #066F78;
 }
 
@@ -280,7 +279,7 @@ header h2 {
   color: white;
 }
 
-/***** CONTACT *****/
+/***** FOOTER *****/
 footer {
   background-color: #c6e5eb;
   padding: 40px 0;
@@ -463,8 +462,155 @@ footer .social-icons i {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* TABLET STYLES */
+  
+  /* General Styles */
+
+  .content-wrapper {
+    max-width: 640px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 1.125em;
+  }
+
+  /* Header */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    width: 45%;
+  }
+
+  header h1 {
+    font-size: 5em;
+    margin: 20px 0 30px 0;
+  }
+
+  header h2 {
+    padding-top: 20px;
+  }
+ 
+  /* Portfolio Section */
+  
+  .portfolio {
+    margin-bottom: 50px;
+  }
+
+  .portfolio figure, 
+  .portfolio .portfolio-text {
+    width: 48%;
+  }
+
+  .portfolio .portfolio-text {
+    margin: 20px 0 0 20px;
+  }
+
+  .portfolio h4 {
+    font-size: 1.125em;
+  }
+
+  /* About Section */
+
+  .about {
+    padding-bottom: 60px;
+  }
+
+  .about h3 {
+    width: 100%;
+  }
+
+  /* Footer */
+
+  footer img#headshot {
+    width: 30%;
+  }
+
+  footer h4 {
+    font-size: 1.25em;
+  }
+
+  footer .email a, footer .whatsapp a {
+    font-size: 1.25em;
+  }
+
+  footer .email {
+    width: 55%;
+  }
+
+  footer .whatsapp {
+    width: 40%;
+  }
+
+  footer .social-icons {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* DESKTOP STYLES */
+
+  /* General Styles */
+  .content-wrapper {
+    max-width: 1000px;
+  }
+
+  h3 {
+    font-size: 2.25em;
+  }
+
+  p {
+    font-size: 1.25em;
+    line-height: 1.33;
+  }
+
+  /* Header */
+
+  header {
+    min-height: 800px;
+  }
+
+  nav ul {
+    width: 38%;
+    padding-top: 50px;
+  }
+
+  nav ul li a {
+    font-size: 1.25em;
+  }
+
+  header h1 {
+    font-size: 7.81em;
+    margin: 30px 0 70px -15px;
+  }
+
+  header h2 {
+    font-size: 3.125em;
+    line-height: 1.25em;
+  }
+
+  /* Portfolio */
+
+  .portfolio figure {
+    margin: 40px 0;
+  }
+
+  .portfolio .portfolio-text {
+    margin: 40px 0 0 40px;
+  }
+
+  .portfolio h4 {
+    font-size: 1.5em;
+  } 
+
 }
 
 @media print,
