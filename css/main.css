@@ -496,7 +496,7 @@ footer .social-icons i {
   }
 
   header h2 {
-    padding-top: 20px;
+    padding-top: 35px;
   }
  
   /* Portfolio Section */
@@ -611,6 +611,20 @@ footer .social-icons i {
     font-size: 1.5em;
   } 
 
+  /* About */
+
+  .about .content-wrapper {
+    justify-content: space-around;
+  }
+
+  .about .about-paragraph {
+    flex-basis: 45%;
+    justify-content: space-around;
+  }
+
+  .about p {
+    line-height: 1.6;
+  }
 }
 
 @media print,
